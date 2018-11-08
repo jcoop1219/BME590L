@@ -8,9 +8,9 @@ const int medBatteryVoltage = 8.5;
 // I/O pins
 const int buttonIn = 20;
 const int whiteLEDout = 21;
-const int blueLEDout = 28;
+const int greenLEDout = 28;
 const int redLEDout = 29;
-const int greenLEDout = 30;
+const int blueLEDout = 30;
 const int batteryVoltageIn = 4;
 
 // global variables

@@ -16,7 +16,7 @@ const int batteryVoltageIn = 4;
 // global variables
 int mode = 0;
 bool buttonPushed = true;
-int pwmOut = 0;
+int pwmOut = 0; //0-255
 bool prevButtonState = true;
 int lastDebounceTime = 0;
 int batteryVoltage = 0;

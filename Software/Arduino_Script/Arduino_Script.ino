@@ -1,29 +1,34 @@
 // parameters
 const int flashRateHz = 2;
 const int pwmMax = 255;
-const int debounceDelayMs = 50;
+const int debounceDelayMs = 100;
 const int lowBatteryVoltage = 7.5;
 const int medBatteryVoltage = 8.5;
 
 // I/O pins
-const int buttonIn = 20;
-const int whiteLEDout = 21;
-const int greenLEDout = 28;
-const int redLEDout = 29;
-const int blueLEDout = 30;
-const int batteryVoltageIn = 4;
+const int buttonIn = 2;
+const int whiteLEDout = 3;
+const int greenLEDout = 10;
+const int redLEDout = 11;
+const int blueLEDout = 12;
+const int batteryVoltageIn = 0;
 
 // global variables
 int mode = 0;
-bool buttonPushed = true;
+bool buttonPushed = false;
 int pwmOut = 0; //0-255
-bool prevButtonState = true;
+//bool prevButtonState = false;
 int lastDebounceTime = 0;
 int batteryVoltage = 0;
 
 
 void setup() {
-  attachInterrupt(digitalPinToInterrupt(buttonIn),detectButtonPress,CHANGE);
+  pinMode(whiteLEDout,OUTPUT);
+  pinMode(redLEDout,OUTPUT);
+  pinMode(greenLEDout,OUTPUT);
+  pinMode(blueLEDout,OUTPUT);
+  attachInterrupt(digitalPinToInterrupt(buttonIn),detectButtonPress,RISING);
+  
 }
 
 void loop() {
@@ -34,23 +39,32 @@ void loop() {
 }
 
 void detectButtonPress() {
-  buttonPushed = !buttonPushed;
+  if ((millis() - lastDebounceTime) > debounceDelayMs) {
+    buttonPushed = true;
+    lastDebounceTime = millis();
+  }
 }
 
 void setMode() {
-  if (buttonPushed != prevButtonState) {
-    lastDebounceTime = millis();
-  }
-  if ((millis() - lastDebounceTime) > debounceDelayMs) {
-    if (mode = 4) {
+  if (buttonPushed) {
+    if (mode == 4) {
       mode = 0;
     }
     else {
       ++mode;
     }
+    buttonPushed = false;
   }
-  prevButtonState = buttonPushed;
 }
+
+//void outputLight() {
+//  if (mode == 0) {
+//    digitalWrite(whiteLEDout,HIGH);
+//  }
+//  else {
+//    digitalWrite(whiteLEDout,LOW);
+//  }
+//}
 
 void outputLight() {
   switch (mode) {

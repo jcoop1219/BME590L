@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7010,7 +7010,6 @@ LED-RGB
 <part name="R9" library="adafruit" deviceset="R-US_" device="R0805" value="100Ω"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="SOD64-12" package3d_urn="urn:adsk.eagle:package:43356/1" value="5.1V Zener"/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="SOD64-12" package3d_urn="urn:adsk.eagle:package:43356/1" value="5.1V Zener"/>
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-RGB" device="NO_IC" package3d_urn="urn:adsk.eagle:package:39374/1" value="WHITE LED"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7108,10 +7107,6 @@ LED-RGB
 <attribute name="NAME" x="170.815" y="59.182" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="176.149" y="59.182" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D1" gate="G$1" x="53.34" y="96.52" rot="R90">
-<attribute name="NAME" x="51.435" y="94.742" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="56.769" y="94.742" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="D2" gate="G$1" x="50.8" y="48.26" rot="R270">
 <attribute name="NAME" x="56.515" y="48.26" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="45.085" y="48.26" size="1.778" layer="95" font="vector" rot="R270" align="top-center"/>
@@ -7172,21 +7167,17 @@ LED-RGB
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="50.8" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="106.68" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
 <junction x="71.12" y="106.68"/>
 <wire x1="152.4" y1="106.68" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="99.06" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<junction x="53.34" y="106.68"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
 <wire x1="139.7" y1="88.9" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="86.36" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="144.78" y="88.9"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="IC2" gate="A1" pin="VO"/>
 <pinref part="PAD1" gate="G$1" pin="P"/>
 </segment>
@@ -7242,12 +7233,8 @@ LED-RGB
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="99.06" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="93.98" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
-<junction x="53.34" y="86.36"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <junction x="40.64" y="86.36"/>
 <pinref part="IC2" gate="A1" pin="GND"/>

@@ -2,8 +2,8 @@
 const int flashRateHz = 2;
 const int pwmMax = 255;
 const int debounceDelayMs = 100;
-const int lowBatteryVoltage = 7.5;
-const int medBatteryVoltage = 8.5;
+const float lowBatteryVoltage = 7.5;
+const float medBatteryVoltage = 8.5;
 
 // I/O pins
 const int buttonIn = 2;
@@ -11,7 +11,7 @@ const int whiteLEDout = 3;
 const int greenLEDout = 10;
 const int redLEDout = 11;
 const int blueLEDout = 12;
-const int batteryVoltageIn = 0;
+const float batteryVoltageIn = 0;
 
 // global variables
 int mode = 0;
@@ -111,12 +111,12 @@ void outputBatteryIndicator() {
     digitalWrite(blueLEDout,LOW);
     digitalWrite(greenLEDout,LOW);
   }
-  else if (batteryVoltage < (102.4*lowBatteryVoltage)) {
+  else if (batteryVoltage < (204.8*(lowBatteryVoltage*0.497))) {  // in voltage divider, theoretical 7.5V is dropped 3.75V then 3.71V, and 0.497 = (3.71/(3.71+3.75))
     digitalWrite(redLEDout,HIGH);
     digitalWrite(blueLEDout,LOW);
     digitalWrite(greenLEDout,LOW);
   }
-  else if (batteryVoltage < (102.4*medBatteryVoltage)) {
+  else if (batteryVoltage < (204.8*(medBatteryVoltage*0.493))) { // in voltage divider, theoretical 8.5V is dropped 4.28V then 4.17V, and 0.493 = (4.17/(4.17+4.28))
     digitalWrite(redLEDout,LOW);
     digitalWrite(blueLEDout,HIGH);
     digitalWrite(greenLEDout,LOW);

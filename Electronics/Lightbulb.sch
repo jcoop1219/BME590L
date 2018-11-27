@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
@@ -6319,98 +6319,6 @@ LED-RGB
 </deviceset>
 </devicesets>
 </library>
-<library name="special" urn="urn:adsk.eagle:library:367">
-<description>&lt;b&gt;Special Devices&lt;/b&gt;&lt;p&gt;
-7-segment displays, switches, heatsinks, crystals, transformers, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="EDG-01" urn="urn:adsk.eagle:footprint:26577/1" library_version="2">
-<description>&lt;b&gt;DIP SWITCH&lt;/b&gt;</description>
-<wire x1="-1.905" y1="-4.953" x2="1.905" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="4.953" x2="-1.905" y2="4.953" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="4.953" x2="-1.905" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.651" x2="-1.397" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="-1.651" x2="-1.397" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.651" x2="-1.905" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.651" x2="-1.905" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.651" x2="-1.905" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-4.953" x2="1.905" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.651" x2="1.397" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="1.651" x2="1.397" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="-1.651" x2="1.905" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.651" x2="1.905" y2="4.953" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.651" x2="1.905" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="1.905" x2="-0.762" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="1.905" x2="0.762" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-1.905" x2="0.762" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-1.905" x2="-0.762" y2="-1.905" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-0.254" y="-4.191" size="1.524" layer="51" ratio="10">1</text>
-<text x="-1.27" y="2.54" size="1.524" layer="51" ratio="10">ON</text>
-<text x="-1.905" y="-6.604" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.905" y="5.334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-0.508" y1="-0.381" x2="0.508" y2="0" layer="21"/>
-<rectangle x1="-0.508" y1="-1.016" x2="0.508" y2="-0.635" layer="21"/>
-<rectangle x1="-0.508" y1="-1.651" x2="0.508" y2="-1.27" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="EDG-01" urn="urn:adsk.eagle:package:26661/1" type="box" library_version="2">
-<description>DIP SWITCH</description>
-<packageinstances>
-<packageinstance name="EDG-01"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SW_DIP-1" urn="urn:adsk.eagle:symbol:26576/1" library_version="2">
-<wire x1="-3.302" y1="0.508" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.302" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="-0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-3.302" y1="-0.508" x2="-3.302" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="-0.508" x2="-3.302" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.397" y1="0.254" x2="1.905" y2="0.254" width="0" layer="94"/>
-<wire x1="1.397" y1="-0.254" x2="1.905" y2="-0.254" width="0" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
-<text x="-5.08" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="4.826" y="-0.127" size="1.27" layer="94" ratio="10" rot="R90">1</text>
-<text x="-3.556" y="-1.143" size="1.27" layer="94" ratio="10" rot="R90">ON</text>
-<rectangle x1="0.381" y1="-0.254" x2="1.397" y2="0.254" layer="94"/>
-<rectangle x1="1.905" y1="-0.254" x2="2.921" y2="0.254" layer="94"/>
-<pin name="2" x="-7.62" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="1" x="7.62" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SW_DIP-1" urn="urn:adsk.eagle:component:26685/1" prefix="SW" uservalue="yes" library_version="2">
-<description>&lt;b&gt;DIP SWITCH&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="SW_DIP-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="EDG-01">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:26661/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Custom Library">
 <packages>
 <package name="SKRPABE010">
@@ -6418,6 +6326,11 @@ LED-RGB
 <smd name="1" x="0" y="2.15" dx="1.05" dy="0.65" layer="1"/>
 <smd name="4" x="4.15" y="0" dx="1.05" dy="0.65" layer="1"/>
 <smd name="2" x="4.15" y="2.15" dx="1.05" dy="0.65" layer="1"/>
+</package>
+<package name="DIPSWITCH">
+<pad name="P$1" x="0" y="0" drill="0.6"/>
+<pad name="P$2" x="0" y="2.5" drill="0.6"/>
+<pad name="P$3" x="0" y="5" drill="0.6"/>
 </package>
 </packages>
 <symbols>
@@ -6431,6 +6344,13 @@ LED-RGB
 <wire x1="-2" y1="-4" x2="-2" y2="-5" width="0.254" layer="94"/>
 <wire x1="-2" y1="-5" x2="-2" y2="-6" width="0.254" layer="94"/>
 <wire x1="-2" y1="-5" x2="-3" y2="-5" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DIPSWITCH">
+<pin name="P$1" x="-10.16" y="0" length="middle"/>
+<pin name="P$2" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="P$3" x="0" y="-10.16" length="middle" rot="R90"/>
+<wire x1="0" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6452,6 +6372,23 @@ LED-RGB
 </device>
 </devices>
 </deviceset>
+<deviceset name="DIPSWITCH">
+<gates>
+<gate name="G$1" symbol="DIPSWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIPSWITCH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$3"/>
+<connect gate="G$1" pin="P$3" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -6460,7 +6397,7 @@ LED-RGB
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3048" drill="0.508">
+<class number="0" name="default" width="0.508" drill="0.508">
 <clearance class="0" value="0.3048"/>
 </class>
 </classes>
@@ -6492,10 +6429,11 @@ LED-RGB
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="IC2" library="adafruit" deviceset="78*" device="L" technology="05"/>
-<part name="SW1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="SW_DIP-1" device="" package3d_urn="urn:adsk.eagle:package:26661/1"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$2" library="Custom Library" deviceset="SKRPABE010" device=""/>
 <part name="U$1" library="Custom Library" deviceset="SKRPABE010" device=""/>
+<part name="U$3" library="Custom Library" deviceset="DIPSWITCH" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6530,15 +6468,15 @@ LED-RGB
 <attribute name="NAME" x="145.796" y="84.455" size="1.778" layer="95"/>
 <attribute name="VALUE" x="145.796" y="79.629" size="1.778" layer="96"/>
 </instance>
-<instance part="G1" gate="G$1" x="25.4" y="55.88" rot="R90">
-<attribute name="NAME" x="22.225" y="50.165" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="30.48" y="50.165" size="1.778" layer="96" rot="R90"/>
+<instance part="G1" gate="G$1" x="17.78" y="53.34" rot="R90">
+<attribute name="NAME" x="14.605" y="47.625" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="22.86" y="47.625" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND1" gate="1" x="144.78" y="93.98" rot="R90">
 <attribute name="VALUE" x="147.32" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND2" gate="1" x="25.4" y="38.1">
-<attribute name="VALUE" x="22.86" y="35.56" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="17.78" y="35.56">
+<attribute name="VALUE" x="15.24" y="33.02" size="1.778" layer="96"/>
 </instance>
 <instance part="ARDUINO_NANO1" gate="G$1" x="119.38" y="83.82">
 <attribute name="NAME" x="104.14" y="53.34" size="1.778" layer="95"/>
@@ -6592,22 +6530,22 @@ LED-RGB
 <instance part="GND9" gate="1" x="40.64" y="83.82">
 <attribute name="VALUE" x="38.1" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="P+3" gate="VCC" x="25.4" y="91.44">
-<attribute name="VALUE" x="22.86" y="88.9" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="VCC" x="17.78" y="86.36">
+<attribute name="VALUE" x="15.24" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="IC2" gate="A1" x="40.64" y="106.68">
 <attribute name="NAME" x="33.02" y="112.395" size="1.778" layer="95"/>
 <attribute name="VALUE" x="33.02" y="109.855" size="1.778" layer="96"/>
-</instance>
-<instance part="SW1" gate="G$1" x="25.4" y="78.74" rot="R90">
-<attribute name="NAME" x="22.225" y="73.66" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="30.48" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+1" gate="VCC" x="27.94" y="111.76">
 <attribute name="VALUE" x="25.4" y="109.22" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$2" gate="G$1" x="165.1" y="99.06"/>
 <instance part="U$1" gate="G$1" x="76.2" y="101.6"/>
+<instance part="U$3" gate="G$1" x="17.78" y="71.12" rot="R180"/>
+<instance part="GND10" gate="1" x="7.62" y="66.04">
+<attribute name="VALUE" x="5.08" y="63.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6659,7 +6597,7 @@ LED-RGB
 <segment>
 <pinref part="G1" gate="G$1" pin="-"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="25.4" y1="40.64" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="38.1" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -6681,6 +6619,11 @@ LED-RGB
 <pinref part="D3" gate="G$1" pin="BLU-C"/>
 <wire x1="88.9" y1="12.7" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="7.62" y1="68.58" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6756,11 +6699,6 @@ LED-RGB
 <wire x1="27.94" y1="106.68" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="1"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="25.4" y1="86.36" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="162.56" y1="106.68" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
@@ -6772,6 +6710,11 @@ LED-RGB
 <wire x1="170.18" y1="104.14" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="99.06" x2="169.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="17.78" y1="83.82" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
@@ -6779,13 +6722,6 @@ LED-RGB
 <wire x1="76.2" y1="58.42" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="D11"/>
 <wire x1="76.2" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="G1" gate="G$1" pin="+"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="68.58" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6861,6 +6797,14 @@ LED-RGB
 <wire x1="76.2" y1="88.9" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
 <junction x="76.2" y="88.9"/>
 <junction x="76.2" y="86.36"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="G1" gate="G$1" pin="+"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="17.78" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="66.04" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

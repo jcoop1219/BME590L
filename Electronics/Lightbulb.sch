@@ -6404,7 +6404,7 @@ LED-RGB
 <parts>
 <part name="R1" library="adafruit" deviceset="R-US_" device="R0805" value="10kΩ"/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0805" value="10kΩ"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="33Ω"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="47Ω"/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="10kΩ"/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0805" value="0.1¨µF"/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0805" value="0.1µF"/>
@@ -6418,9 +6418,9 @@ LED-RGB
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-RGB" device="NO_IC" package3d_urn="urn:adsk.eagle:package:39374/1" value="RGB LED"/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="150Ω"/>
-<part name="R8" library="adafruit" deviceset="R-US_" device="R0805" value="100Ω"/>
-<part name="R9" library="adafruit" deviceset="R-US_" device="R0805" value="100Ω"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="100Ω"/>
+<part name="R8" library="adafruit" deviceset="R-US_" device="R0805" value="47Ω"/>
+<part name="R9" library="adafruit" deviceset="R-US_" device="R0805" value="47Ω"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="SOD64-12" package3d_urn="urn:adsk.eagle:package:43356/1" value="5.1V Zener"/>
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-RGB" device="NO_IC" package3d_urn="urn:adsk.eagle:package:39374/1" value="WHITE LED"/>

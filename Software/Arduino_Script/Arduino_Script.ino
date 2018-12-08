@@ -2,8 +2,11 @@
 const int flashRateHz = 2;
 const int pwmMax = 255;
 const int debounceDelayMs = 100;
-const float lowBatteryVoltage = 7.5;
-const float medBatteryVoltage = 8.5;
+const float deadBatteryVoltage = 5.4;
+const float lowBatteryVoltage = 7;
+const float medBatteryVoltage = 8;
+const float conversionFactor = 100.8; //used to convert battery voltage thresholds to 0-1023 digital range read-in via voltage divider circuit
+//const int batteryCheckDebounceMs = 250;
 
 // I/O pins
 const int buttonIn = 2;
@@ -11,15 +14,15 @@ const int whiteLEDout = 3;
 const int greenLEDout = 10;
 const int redLEDout = 11;
 const int blueLEDout = 12;
-const float batteryVoltageIn = 0;
+const int batteryVoltageIn = 0;
 
 // global variables
 int mode = 0;
 bool buttonPushed = false;
 int pwmOut = 0; //0-255
-//bool prevButtonState = false;
 int lastDebounceTime = 0;
 int batteryVoltage = 0;
+int lastBatteryCheckTime = 0;
 
 
 void setup() {
@@ -57,15 +60,6 @@ void setMode() {
   }
 }
 
-//void outputLight() {
-//  if (mode == 0) {
-//    digitalWrite(whiteLEDout,HIGH);
-//  }
-//  else {
-//    digitalWrite(whiteLEDout,LOW);
-//  }
-//}
-
 void outputLight() {
   switch (mode) {
     case 0:
@@ -101,22 +95,29 @@ void flashLED() {
   delay(500/flashRateHz);
 }
 
+//void checkBattery() {
+//  if ((millis() - lastBatteryCheckTime) >= batteryCheckDebounceMs) {
+//    batteryVoltage = analogRead(batteryVoltageIn);
+//    lastBatteryCheckTime = millis();
+//  }
+//}
+
 void checkBattery() {
   batteryVoltage = analogRead(batteryVoltageIn);
 }
 
 void outputBatteryIndicator() {
-  if (batteryVoltage < 100) {
+  if (batteryVoltage < (deadBatteryVoltage*conversionFactor)) {
     digitalWrite(redLEDout,LOW);
     digitalWrite(blueLEDout,LOW);
     digitalWrite(greenLEDout,LOW);
   }
-  else if (batteryVoltage < (204.8*(lowBatteryVoltage*0.497))) {  // in voltage divider, theoretical 7.5V is dropped 3.75V then 3.71V, and 0.497 = (3.71/(3.71+3.75))
+  else if (batteryVoltage < (lowBatteryVoltage*conversionFactor)) {
     digitalWrite(redLEDout,HIGH);
     digitalWrite(blueLEDout,LOW);
     digitalWrite(greenLEDout,LOW);
   }
-  else if (batteryVoltage < (204.8*(medBatteryVoltage*0.493))) { // in voltage divider, theoretical 8.5V is dropped 4.28V then 4.17V, and 0.493 = (4.17/(4.17+4.28))
+  else if (batteryVoltage < (medBatteryVoltage*conversionFactor)) {
     digitalWrite(redLEDout,LOW);
     digitalWrite(blueLEDout,HIGH);
     digitalWrite(greenLEDout,LOW);
@@ -127,3 +128,26 @@ void outputBatteryIndicator() {
     digitalWrite(greenLEDout,HIGH);
   }
 }
+
+//void outputBatteryIndicator() {
+//  if (batteryVoltage < 552) {
+//    digitalWrite(redLEDout,LOW);
+//    digitalWrite(blueLEDout,LOW);
+//    digitalWrite(greenLEDout,LOW);
+//  }
+//  else if (batteryVoltage < 702) {
+//    digitalWrite(redLEDout,HIGH);
+//    digitalWrite(blueLEDout,LOW);
+//    digitalWrite(greenLEDout,LOW);
+//  }
+//  else if (batteryVoltage < 802) {
+//    digitalWrite(redLEDout,LOW);
+//    digitalWrite(blueLEDout,HIGH);
+//    digitalWrite(greenLEDout,LOW);
+//  }
+//  else {
+//    digitalWrite(redLEDout,LOW);
+//    digitalWrite(blueLEDout,LOW);
+//    digitalWrite(greenLEDout,HIGH);
+//  }
+//}

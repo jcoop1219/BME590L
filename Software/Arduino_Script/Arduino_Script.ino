@@ -23,6 +23,8 @@ int pwmOut = 0; //0-255
 int lastDebounceTime = 0;
 int batteryVoltage = 0;
 int lastBatteryCheckTime = 0;
+int lastFlashTime = 0;
+bool flashMode = LOW;
 
 
 void setup() {
@@ -88,11 +90,19 @@ void shineLED() {
   analogWrite(whiteLEDout,pwmOut);
 }
 
+//void flashLED() {
+//  digitalWrite(whiteLEDout,HIGH);
+//  delay(500/flashRateHz);
+//  digitalWrite(whiteLEDout,LOW);
+//  delay(500/flashRateHz);
+//}
+
 void flashLED() {
-  digitalWrite(whiteLEDout,HIGH);
-  delay(500/flashRateHz);
-  digitalWrite(whiteLEDout,LOW);
-  delay(500/flashRateHz);
+  if ((millis() - lastFlashTime) >= (500/flashRateHz)) {
+    flashMode = !flashMode;
+    digitalWrite(whiteLEDout,flashMode);
+    lastFlashTime = millis();
+  }
 }
 
 //void checkBattery() {

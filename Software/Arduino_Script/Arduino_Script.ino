@@ -128,26 +128,3 @@ void outputBatteryIndicator() {
     digitalWrite(greenLEDout,HIGH);
   }
 }
-
-//void outputBatteryIndicator() {
-//  if (batteryVoltage < 552) {
-//    digitalWrite(redLEDout,LOW);
-//    digitalWrite(blueLEDout,LOW);
-//    digitalWrite(greenLEDout,LOW);
-//  }
-//  else if (batteryVoltage < 702) {
-//    digitalWrite(redLEDout,HIGH);
-//    digitalWrite(blueLEDout,LOW);
-//    digitalWrite(greenLEDout,LOW);
-//  }
-//  else if (batteryVoltage < 802) {
-//    digitalWrite(redLEDout,LOW);
-//    digitalWrite(blueLEDout,HIGH);
-//    digitalWrite(greenLEDout,LOW);
-//  }
-//  else {
-//    digitalWrite(redLEDout,LOW);
-//    digitalWrite(blueLEDout,LOW);
-//    digitalWrite(greenLEDout,HIGH);
-//  }
-//}

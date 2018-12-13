@@ -19,9 +19,9 @@ const int batteryVoltageIn = 0;  //battery tester analog in
 int mode = 0;  //flashing mode
 bool buttonPushed = false;
 int pwmOut = 0; //0-255 PWM signal
-int lastDebounceTime = 0;
+unsigned long lastDebounceTime = 0;
 int batteryVoltage = 0;
-int lastFlashTime = 0;
+unsigned long lastFlashTime = 0;
 bool flashMode = LOW;
 
 

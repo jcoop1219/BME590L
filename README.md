@@ -8,7 +8,7 @@
 + `Intermediate Brightness`
 + `Least Bright`
 + `Flashing @ 2 Hz`
-3. Push and hold white button furthest from I/O switch to show the remaining voltage left in the battery on the adjacent LED:
+1. Push and hold white button furthest from I/O switch to show the remaining voltage left in the battery on the adjacent LED:
 + `GREEN` = battery high (8-9V)
 + `BLUE` = battery medium (7-8V)
 + `RED` = battery low (<6V)

@@ -1,5 +1,14 @@
 # BME590L_Lightbulb - Design Skills Project (Variable Light Intensity)
 
+## Usage Guide
+1. Turn on device using red I/O switch.
+2. Push white button closest to I/O switch to cycle through modes:
+  1. `Off`
+  1. `Brightest`
+  1. `Intermediate Brightness`
+  1. `Least Bright`
+  1. `Flashing @ 2 Hz`
+
 ## Functional Specifications
 * LED light that is button-activated to switch between the following operating modes:
   1. `Off`

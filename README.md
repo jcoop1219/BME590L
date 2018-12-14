@@ -31,6 +31,7 @@ See Final Working Video on [YouTube](https://youtu.be/NFrjT-VMIhY).
 ## Documentation
 1. [Bill of Materials](https://github.com/jcoop1219/BME590L_Lightbulb/blob/master/Documentation/Bill%20of%20Materials.xlsx)
 1. [Final Device Photos](https://github.com/jcoop1219/BME590L_Lightbulb/tree/master/Documentation/Final%20Device%20Photos)
+1. [Testing Videos](https://github.com/jcoop1219/BME590L_Lightbulb/tree/master/Testing/Videos)
 
 ## Other Misc Notes:
 + Total weight = 9.9 oz

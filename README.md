@@ -18,9 +18,9 @@
 2. Pull top of case off of bottom of case and disconnect toggle switch Molex connection from board.
 3. Remove battery wire Molex connection from board.
 4. Remove battery from battery slot.
-5. Detach battery wire holder from battery.
-6. Attach battery wire holder to new battery.
-7. Add new battery to battery slow.
+5. Detach wired cap from battery.
+6. Attach wired cap to new battery.
+7. Add new battery to battery slot.
 8. Re-attach battery wire Molex connection to board.
 9. Reconnect toggle switch Molex connection to board.
 10. Replace case top over case bottom (note: may need to use tweezers or small object to guide push buttons through case top).

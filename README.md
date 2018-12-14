@@ -1,5 +1,7 @@
 # BME590L_Lightbulb - Design Skills Project (Variable Light Intensity)
 
+See Final Working Video on [YouTube](https://youtu.be/NFrjT-VMIhY).
+
 ## Usage Guide
 1. Turn on device using red I/O switch.
 2. Push white button closest to I/O switch to cycle through light modes:

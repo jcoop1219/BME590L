@@ -5,11 +5,11 @@ See Final Working Video on [YouTube](https://youtu.be/NFrjT-VMIhY).
 ## Usage Guide
 1. Turn on device using red I/O switch.
 1. Push white button closest to I/O switch to cycle through light modes:
-+ `Off`
-+ `Brightest`
-+ `Intermediate Brightness`
-+ `Least Bright`
-+ `Flashing @ 2 Hz`
+   + `Off`
+   + `Brightest`
+   + `Intermediate Brightness`
+   + `Least Bright`
+   + `Flashing @ 2 Hz`
 1. Push and hold white button furthest from I/O switch to show the remaining voltage left in the battery on the adjacent LED:
    + `GREEN` = battery high (>8V)
    + `BLUE` = battery medium (7-8V)

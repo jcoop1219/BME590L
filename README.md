@@ -17,17 +17,22 @@ See Final Working Video on [YouTube](https://youtu.be/NFrjT-VMIhY).
 
 ## Battery Replacement
 1. Spin flaps on bottom away from center of device.
-2. Pull top of case off of bottom of case and disconnect toggle switch Molex connection from board.
-3. Remove battery wire Molex connection from board.
-4. Remove battery from battery slot.
-5. Detach wired cap from battery.
-6. Attach wired cap to new battery.
-7. Add new battery to battery slot.
-8. Re-attach battery wire Molex connection to board.
-9. Reconnect toggle switch Molex connection to board.
-10. Replace case top over case bottom (note: may need to use tweezers or small object to guide push buttons through case top).
-11. Spin flaps on bottom towards center of device.
+1. Pull top of case off of bottom of case and disconnect toggle switch Molex connection from board.
+1. Remove battery wire Molex connection from board.
+1. Remove battery from battery slot.
+1. Detach wired cap from battery.
+1. Attach wired cap to new battery.
+1. Add new battery to battery slot.
+1. Re-attach battery wire Molex connection to board.
+1. Reconnect toggle switch Molex connection to board.
+1. Replace case top over case bottom (note: may need to use tweezers or small object to guide push buttons through case top).
+1. Spin flaps on bottom towards center of device.
 
 ## Documentation
 1. [Bill of Materials](https://github.com/jcoop1219/BME590L_Lightbulb/blob/master/Documentation/Bill%20of%20Materials.xlsx)
-2. 
+1. [Final Device Photos](https://github.com/jcoop1219/BME590L_Lightbulb/tree/master/Documentation/Final%20Device%20Photos)
+
+## Other Misc Notes:
++ Total weight = 9.9 oz
++ Current draw while on = 55 mA (lasts 7.2 hours on standard 9V battery)
++ Current draw while off = 0 mA (full off ensured by toggle I/O switch)

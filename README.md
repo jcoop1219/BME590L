@@ -9,9 +9,9 @@
 + `Least Bright`
 + `Flashing @ 2 Hz`
 3. Push and hold white button furthest from I/O switch to show the remaining voltage left in the battery on the adjacent LED:
-+ `GREEN` = battery high (8-9V)
++ `GREEN` = battery high (>8V)
 + `BLUE` = battery medium (7-8V)
-+ `RED` = battery low (<6V)
++ `RED` = battery low (<7V)
 
 ## Battery Replacement
 1. Spin flaps on bottom away from center of device.
